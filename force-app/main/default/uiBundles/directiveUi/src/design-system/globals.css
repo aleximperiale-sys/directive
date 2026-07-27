@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Directive design tokens.
+  One token system drives both themes. Colors are stored as raw HSL channels
+  ("H S% L%") so Tailwind's `hsl(var(--token) / <alpha-value>)` can add opacity.
+
+  To self-host Geist, uncomment and point these at local woff2 files:
+
+  @font-face {
+    font-family: "Geist";
+    src: url("/src/assets/fonts/Geist-Regular.woff2") format("woff2");
+    font-weight: 400; font-display: swap;
+  }
+*/
+
+:root {
+  color-scheme: light;
+
+  /* Light theme */
+  --background: 0 0% 99%;
+  --surface: 0 0% 100%;
+  --surface-raised: 0 0% 100%;
+  --surface-hover: 240 5% 96%;
+  --foreground: 240 10% 12%;
+  --foreground-muted: 240 4% 46%;
+  --border: 240 6% 90%;
+  --border-strong: 240 6% 80%;
+  --accent: 243 75% 59%;
+  --accent-foreground: 0 0% 100%;
+  --critical: 356 75% 53%;
+  --warning: 32 95% 44%;
+  --success: 142 66% 36%;
+  --info: 217 91% 55%;
+  --focus-ring: 243 75% 59%;
+
+  /* Priority band accents (surface tints derive via alpha) */
+  --band-critical: 356 75% 53%;
+  --band-high: 25 95% 48%;
+  --band-medium: 217 91% 55%;
+  --band-low: 240 4% 46%;
+  --band-background: 240 4% 64%;
+
+  --shadow-sm: 0 1px 2px 0 hsl(240 10% 12% / 0.04);
+  --shadow-md: 0 4px 12px -2px hsl(240 10% 12% / 0.08);
+  --shadow-lg: 0 12px 32px -8px hsl(240 10% 12% / 0.16);
+}
+
+.dark {
+  color-scheme: dark;
+
+  /* Dark theme */
+  --background: 240 10% 6%;
+  --surface: 240 8% 9%;
+  --surface-raised: 240 7% 12%;
+  --surface-hover: 240 6% 16%;
+  --foreground: 240 10% 96%;
+  --foreground-muted: 240 5% 62%;
+  --border: 240 6% 18%;
+  --border-strong: 240 6% 28%;
+  --accent: 243 80% 68%;
+  --accent-foreground: 240 20% 8%;
+  --critical: 356 80% 62%;
+  --warning: 32 95% 58%;
+  --success: 142 60% 50%;
+  --info: 217 91% 66%;
+  --focus-ring: 243 80% 68%;
+
+  --band-critical: 356 80% 62%;
+  --band-high: 28 95% 58%;
+  --band-medium: 217 91% 66%;
+  --band-low: 240 5% 62%;
+  --band-background: 240 5% 46%;
+
+  --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+  --shadow-md: 0 4px 12px -2px hsl(0 0% 0% / 0.4);
+  --shadow-lg: 0 12px 32px -8px hsl(0 0% 0% / 0.55);
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Visible focus ring on keyboard navigation everywhere. */
+  :focus-visible {
+    outline: 2px solid hsl(var(--focus-ring));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: hsl(var(--accent) / 0.25);
+  }
+}
+
+/* Density: `compact` tightens vertical rhythm of list rows and cards. */
+[data-density="compact"] {
+  --row-height: 40px;
+  --card-padding: 12px;
+}
+[data-density="comfortable"] {
+  --row-height: 52px;
+  --card-padding: 16px;
+}
+
+/* Respect reduced-motion: neutralize all token-driven animations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Thin, unobtrusive scrollbars matching the surface. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border-strong)) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: hsl(var(--border-strong));
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}

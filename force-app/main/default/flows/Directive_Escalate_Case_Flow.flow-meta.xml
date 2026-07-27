@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <description>Escalates a Case referenced by a Directive Work Item: flags it as escalated and raises its priority to High. Invoked from Apex by DirectiveActionService for the ESCALATE_CASE action. Inputs: recordId (Case Id). Outputs: escalationMessage.</description>
+    <environments>Default</environments>
+    <interviewLabel>Directive Escalate Case Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Directive Escalate Case Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <runInMode>SystemModeWithSharing</runInMode>
+    <status>Active</status>
+    <start>
+        <locationX>176</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Escalate_Case</targetReference>
+        </connector>
+    </start>
+    <recordUpdates>
+        <name>Escalate_Case</name>
+        <label>Escalate Case</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <connector>
+            <targetReference>Set_Message</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>IsEscalated</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <assignments>
+        <name>Set_Message</name>
+        <label>Set Message</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>escalationMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Case escalated: flagged as escalated and priority raised to High.</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>escalationMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

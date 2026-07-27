@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Directive Sensitive Actions</label>
+    <description>Grants sensitive actions: escalation and knowledge publishing.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Directive_Escalate_Case</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Directive_Publish_Knowledge</name>
+    </customPermissions>
+</PermissionSet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <label>Suppression / snoozed</label>
+    <protected>false</protected>
+    <values>
+        <field>Component_Label__c</field>
+        <value xsi:type="xsd:string">Suppression / snoozed</value>
+    </values>
+    <values>
+        <field>Weight__c</field>
+        <value xsi:type="xsd:double">-30</value>
+    </values>
+    <values>
+        <field>Maximum_Contribution__c</field>
+        <value xsi:type="xsd:double">-30</value>
+    </values>
+    <values>
+        <field>Calculation_Strategy__c</field>
+        <value xsi:type="xsd:string">Apex</value>
+    </values>
+    <values>
+        <field>Calculation_Key__c</field>
+        <value xsi:type="xsd:string">SUPPRESSION</value>
+    </values>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome_Type__c</fullName>
+    <label>Outcome Type</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Case_Closed</fullName><default>false</default><label>Case_Closed</label></value>
+            <value><fullName>Customer_Responded</fullName><default>false</default><label>Customer_Responded</label></value>
+            <value><fullName>Risk_Decreased</fullName><default>false</default><label>Risk_Decreased</label></value>
+            <value><fullName>Approval_Completed</fullName><default>false</default><label>Approval_Completed</label></value>
+            <value><fullName>Duplicate_Resolved</fullName><default>false</default><label>Duplicate_Resolved</label></value>
+            <value><fullName>Ineffective</fullName><default>false</default><label>Ineffective</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

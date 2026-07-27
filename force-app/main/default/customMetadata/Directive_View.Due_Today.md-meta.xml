@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <label>Due Today</label>
+    <protected>false</protected>
+    <values>
+        <field>Persona__c</field>
+        <value xsi:type="xsd:string">Service_Operations</value>
+    </values>
+    <values>
+        <field>Filter_Definition__c</field>
+        <value xsi:type="xsd:string">{"dueWithinHours":24}</value>
+    </values>
+    <values>
+        <field>Sort__c</field>
+        <value xsi:type="xsd:string">Due_At__c ASC</value>
+    </values>
+    <values>
+        <field>Shared__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

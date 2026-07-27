@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <label>High Value Account Critical Case</label>
+    <protected>false</protected>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">Case</value>
+    </values>
+    <values>
+        <field>Evaluation_Type__c</field>
+        <value xsi:type="xsd:string">Aggregated</value>
+    </values>
+    <values>
+        <field>Condition_Strategy__c</field>
+        <value xsi:type="xsd:string">Apex</value>
+    </values>
+    <values>
+        <field>Condition_Key__c</field>
+        <value xsi:type="xsd:string">HIGH_VALUE_CRITICAL</value>
+    </values>
+    <values>
+        <field>Threshold__c</field>
+        <value xsi:type="xsd:double">100000.0</value>
+    </values>
+    <values>
+        <field>Persona__c</field>
+        <value xsi:type="xsd:string">Service_Operations</value>
+    </values>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Revenue</value>
+    </values>
+    <values>
+        <field>Severity__c</field>
+        <value xsi:type="xsd:string">Critical</value>
+    </values>
+    <values>
+        <field>Priority_Base__c</field>
+        <value xsi:type="xsd:double">40</value>
+    </values>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

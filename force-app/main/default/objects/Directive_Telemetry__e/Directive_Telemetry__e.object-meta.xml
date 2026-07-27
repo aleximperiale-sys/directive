@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Directive telemetry platform event. Fire-and-forget operational signal published by the service layer (action runs, latencies, errors) for observability. Subscribers aggregate metrics or forward to an external observability platform without blocking the UI.</description>
+    <eventType>HighVolume</eventType>
+    <label>Directive Telemetry</label>
+    <pluralLabel>Directive Telemetry</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

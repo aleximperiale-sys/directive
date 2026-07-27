@@ -1,0 +1,17 @@
+{
+  "name": "directive",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Directive - Intelligent work orchestration for Salesforce (Service Operations MVP)",
+  "scripts": {
+    "auth": "bash scripts/auth.sh",
+    "deploy": "bash scripts/deploy.sh",
+    "ui:install": "npm --prefix force-app/main/default/uiBundles/directiveUi install",
+    "ui:dev": "npm --prefix force-app/main/default/uiBundles/directiveUi run dev",
+    "ui:build": "npm --prefix force-app/main/default/uiBundles/directiveUi run build",
+    "apex:test": "sf apex run test --result-format human --code-coverage --wait 20"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

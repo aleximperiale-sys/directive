@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "strict": true,
+
+    // A project referenced by tsconfig.json must be composite, and a composite
+    // project may not disable emit. Emit declaration stubs into a temp dir so
+    // nothing lands in the deployable bundle.
+    "composite": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "./node_modules/.tmp/tsconfig-node",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
+    // vite.config.ts imports `node:url`.
+    "types": ["node"]
+  },
+  "include": ["vite.config.ts"]
+}

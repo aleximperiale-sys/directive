@@ -1,0 +1,97 @@
+Directive - Proprietary Software License
+Copyright (c) 2026 Alex Imperiale. All Rights Reserved.
+
+================================================================================
+SOURCE-AVAILABLE, NOT OPEN SOURCE
+================================================================================
+
+This repository is published publicly so that the source may be READ and
+EVALUATED. It is NOT open source. No license to use the software is granted by
+its public availability, and no rights are granted by implication, estoppel, or
+otherwise except as expressly stated below.
+
+--------------------------------------------------------------------------------
+1. WHAT YOU MAY DO WITHOUT A LICENSE
+--------------------------------------------------------------------------------
+
+Subject to the restrictions in Section 2, you may:
+
+  (a) view and read the source code in this repository;
+  (b) reference it for the purposes of evaluation, study, journalism, academic
+      commentary, or security research; and
+  (c) quote short excerpts where required by applicable law (for example, fair
+      dealing or fair use).
+
+--------------------------------------------------------------------------------
+2. WHAT REQUIRES A PAID LICENSE
+--------------------------------------------------------------------------------
+
+Except as permitted in Section 1, you may NOT, without first obtaining a written
+commercial license from the copyright holder:
+
+  (a) use the software, in whole or in part, for any purpose, including internal
+      business use, evaluation in a production environment, or personal projects;
+  (b) copy, clone, fork, mirror, or otherwise reproduce this repository or any
+      substantial part of it, other than the transient copy your web browser or
+      the hosting platform makes to display it to you;
+  (c) modify, adapt, translate, or create derivative works from it;
+  (d) distribute, publish, sublicense, sell, rent, lease, or otherwise transfer
+      it or any derivative of it;
+  (e) deploy it to any Salesforce organization or other environment;
+  (f) remove, obscure, or alter any copyright, license, or attribution notice; or
+  (g) use it, or any part of it, as training data or input for the development,
+      fine-tuning, or evaluation of any machine learning or artificial
+      intelligence model or system.
+
+--------------------------------------------------------------------------------
+3. OBTAINING A LICENSE
+--------------------------------------------------------------------------------
+
+Commercial licenses are available for purchase. To request one, or to discuss
+evaluation, partnership, or redistribution terms, contact the copyright holder
+through this repository (open an issue) or via the contact details listed on the
+repository's GitHub profile.
+
+Approval is at the sole discretion of the copyright holder. Any license granted
+is non-exclusive and non-transferable unless its written terms state otherwise.
+
+--------------------------------------------------------------------------------
+4. THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------------
+
+This project depends on third-party packages that remain governed by their own
+licenses (see package.json and the dependency lockfile). Nothing in this license
+alters, restricts, or extends your rights in those components. This license
+applies solely to the original work in this repository.
+
+--------------------------------------------------------------------------------
+5. NO WARRANTY
+--------------------------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT.
+
+--------------------------------------------------------------------------------
+6. LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+7. TERMINATION
+--------------------------------------------------------------------------------
+
+Any use of the software outside the permissions granted in Section 1, without a
+written license, terminates all rights granted here automatically and may
+constitute copyright infringement.
+
+================================================================================
+Note: GitHub's Terms of Service permit any user to view and fork public
+repositories. Publishing here therefore does not, and cannot, technically
+prevent copying. This license defines what you are legally permitted to do with
+the code, which is separate from what the platform technically allows.
+================================================================================

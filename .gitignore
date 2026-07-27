@@ -1,0 +1,24 @@
+# Salesforce
+.sf/
+.sfdx/
+.localdevserver/
+deploy-options.json
+
+# Node / UI bundle
+node_modules/
+dist/
+*.log
+.npm/
+.vite/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Env / editor
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

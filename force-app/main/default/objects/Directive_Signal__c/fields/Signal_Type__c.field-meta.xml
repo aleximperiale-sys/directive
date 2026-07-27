@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signal_Type__c</fullName>
+    <label>Signal Type</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>SLA_Threshold</fullName><default>false</default><label>SLA_Threshold</label></value>
+            <value><fullName>No_Activity</fullName><default>false</default><label>No_Activity</label></value>
+            <value><fullName>Case_Priority_Change</fullName><default>false</default><label>Case_Priority_Change</label></value>
+            <value><fullName>Repeated_Response</fullName><default>false</default><label>Repeated_Response</label></value>
+            <value><fullName>Agent_Failure</fullName><default>false</default><label>Agent_Failure</label></value>
+            <value><fullName>Routing_Anomaly</fullName><default>false</default><label>Routing_Anomaly</label></value>
+            <value><fullName>Knowledge_Retrieval_Failure</fullName><default>false</default><label>Knowledge_Retrieval_Failure</label></value>
+            <value><fullName>Approval_Submitted</fullName><default>false</default><label>Approval_Submitted</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

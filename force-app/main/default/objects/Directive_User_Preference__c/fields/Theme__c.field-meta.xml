@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Theme__c</fullName>
+    <label>Theme</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>system</fullName><default>true</default><label>system</label></value>
+            <value><fullName>light</fullName><default>false</default><label>light</label></value>
+            <value><fullName>dark</fullName><default>false</default><label>dark</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
