@@ -1,3 +1,8 @@
+# Secrets: never commit. This repo is public.
+.elevenlabs_key
+*.key
+.env.local
+
 # Salesforce
 .sf/
 .sfdx/
