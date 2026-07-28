@@ -12,6 +12,26 @@ for a service-ops persona.
 
 ---
 
+## Screenshots
+
+![Today — prioritized work, approvals, and AI activity at a glance](docs/screenshots/01-today.png)
+
+<details>
+<summary>More screenshots</summary>
+
+![Work detail](docs/screenshots/02-work-detail.png)
+*Work detail — explainable priority score breakdown*
+
+![Approvals](docs/screenshots/03-approvals.png)
+*Approvals — a unified queue of decisions waiting on you*
+
+![Insights](docs/screenshots/04-insights.png)
+*Insights — what changed, why it matters, and what to do about it*
+
+</details>
+
+---
+
 ## ⚖️ License - source-available, not open source
 
 **Copyright © 2026 Alex Imperiale. All Rights Reserved.**
