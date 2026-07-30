@@ -32,25 +32,6 @@ for a service-ops persona.
 
 ---
 
-## ⚖️ License - source-available, not open source
-
-**Copyright © 2026 Alex Imperiale. All Rights Reserved.**
-
-This source is published so it can be **read and evaluated**. It is **not** open source,
-and no right to use it is granted by its being public.
-
-| | |
-| --- | --- |
-| ✅ Allowed without a license | Reading the code; evaluation, study, commentary, security research |
-| ❌ Requires a **purchased license** | Using it for any purpose · cloning, forking or mirroring · modifying · redistributing · deploying to any org · using it as AI/ML training data |
-
-**Want to use it? A commercial license is available for purchase** - open an issue or use
-the contact details on the GitHub profile. See [LICENSE](LICENSE) for the full terms.
-
-> GitHub lets anyone view or fork a public repository; that is a platform behaviour, not a
-> grant of permission. The LICENSE governs what you may legally do with this code.
-
----
 
 ## What's in here
 
