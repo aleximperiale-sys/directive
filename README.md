@@ -14,21 +14,14 @@ for a service-ops persona.
 
 ## Screenshots
 
-![Today — prioritized work, approvals, and AI activity at a glance](docs/screenshots/01-today.png)
+Captured from the Directive UI.
 
-<details>
-<summary>More screenshots</summary>
-
-![Work detail](docs/screenshots/02-work-detail.png)
-*Work detail — explainable priority score breakdown*
-
-![Approvals](docs/screenshots/03-approvals.png)
-*Approvals — a unified queue of decisions waiting on you*
-
-![Insights](docs/screenshots/04-insights.png)
-*Insights — what changed, why it matters, and what to do about it*
-
-</details>
+| | |
+|---|---|
+| ![Today](docs/screenshots/01-today.png) | ![Work detail](docs/screenshots/02-work-detail.png) |
+| **Today.** Immediate work leads the page, then the decisions waiting on you, then what is worth attention while you still have time. The right rail carries the priority mix, what is due next, and what the agents have been doing. | **Work detail.** The priority score broken into every component that produced it, including the one that lowered it. A recovery call already on the calendar subtracts 8, and the page says so. |
+| ![Approvals](docs/screenshots/03-approvals.png) | ![Insights](docs/screenshots/04-insights.png) |
+| **Approvals.** One queue for every decision waiting on a person. Each carries the action it will take, the reason it was proposed, and a confidence score, so approving is a judgement rather than a guess. | **Insights.** Every chart states what changed and why, then ends in the action that follows from it. A rising queue is only useful if it names the routing rule that caused it. |
 
 ---
 
