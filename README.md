@@ -14,17 +14,43 @@ for a service-ops persona.
 
 ## Screenshots
 
-Captured from the Directive UI.
+![Today - prioritized work, approvals, and AI activity at a glance](docs/screenshots/01-today.png)
 
-| | |
-|---|---|
-| ![Today](docs/screenshots/01-today.png) | ![Work detail](docs/screenshots/02-work-detail.png) |
-| **Today.** Immediate work leads the page, then the decisions waiting on you, then what is worth attention while you still have time. The right rail carries the priority mix, what is due next, and what the agents have been doing. | **Work detail.** The priority score broken into every component that produced it, including the one that lowered it. A recovery call already on the calendar subtracts 8, and the page says so. |
-| ![Approvals](docs/screenshots/03-approvals.png) | ![Insights](docs/screenshots/04-insights.png) |
-| **Approvals.** One queue for every decision waiting on a person. Each carries the action it will take, the reason it was proposed, and a confidence score, so approving is a judgement rather than a guess. | **Insights.** Every chart states what changed and why, then ends in the action that follows from it. A rising queue is only useful if it names the routing rule that caused it. |
+<details>
+<summary>More screenshots</summary>
+
+![Work detail](docs/screenshots/02-work-detail.png)
+*Work detail - explainable priority score breakdown*
+
+![Approvals](docs/screenshots/03-approvals.png)
+*Approvals - a unified queue of decisions waiting on you*
+
+![Insights](docs/screenshots/04-insights.png)
+*Insights - what changed, why it matters, and what to do about it*
+
+</details>
 
 ---
 
+## ⚖️ License - source-available, not open source
+
+**Copyright © 2026 Alex Imperiale. All Rights Reserved.**
+
+This source is published so it can be **read and evaluated**. It is **not** open source,
+and no right to use it is granted by its being public.
+
+| | |
+| --- | --- |
+| ✅ Allowed without a license | Reading the code; evaluation, study, commentary, security research |
+| ❌ Requires a **purchased license** | Using it for any purpose · cloning, forking or mirroring · modifying · redistributing · deploying to any org · using it as AI/ML training data |
+
+**Want to use it? A commercial license is available for purchase** - open an issue or use
+the contact details on the GitHub profile. See [LICENSE](LICENSE) for the full terms.
+
+> GitHub lets anyone view or fork a public repository; that is a platform behaviour, not a
+> grant of permission. The LICENSE governs what you may legally do with this code.
+
+---
 
 ## What's in here
 
